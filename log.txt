@@ -1,0 +1,1 @@
+{"front":"sm3e","back":"x","type":"basic"};{"front":"x","back":"w","type":"basic"};
