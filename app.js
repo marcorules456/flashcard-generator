@@ -24,15 +24,7 @@ inquirer.prompt([{
 
     type: 'list',
 
-    choices: [{
-
-        name: 'add-flashcard'
-
-    }, {
-
-        name: 'show-all-cards'
-
-    }]
+    choices: [{name: 'add-flashcard' }, {name: 'show-all-cards'}]
 
 }]).then(function(answer) {
 
@@ -84,20 +76,7 @@ var addCard = function() {
 
                 message: 'What is the question?',
 
-                validate: function(input) {
-
-                    if (input === '') {
-
-                        console.log('Please provide a question');
-
-                        return false;
-
-                    } else {
-
-                        return true;
-
-                    }
-
+                
                 }
 
             }, {
@@ -106,20 +85,7 @@ var addCard = function() {
 
                 message: 'What is the answer?',
 
-                validate: function(input) {
-
-                    if (input === '') {
-
-                        console.log('Please provide an answer');
-
-                        return false;
-
-                    } else {
-
-                        return true;
-
-                    }
-
+               
                 }
 
             }]).then(function(answer) {
@@ -139,20 +105,6 @@ var addCard = function() {
                 name: 'text',
 
                 message: 'What is the full text?',
-
-                validate: function(input) {
-
-                    if (input === '') {
-
-                        console.log('Please provide the full text');
-
-                        return false;
-
-                    } else {
-
-                        return true;
-
-                    }
 
                 }
 
